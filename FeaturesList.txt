@@ -1,0 +1,32 @@
+Text Blocks: multi line texts.
+
+New Methods in String class:
+	stripIndent
+	translateEscapes
+	formatted
+
+Switch expression update: Added a new keyword yield to return from cases.
+
+Platform Changes:
+	Reimplementation of Socket API using NIO
+	Class Data sharing: -XX:ArchiveClassesAtExit=ClassesUsed.jsa to dump data
+						-XX:SharedArchiveFile=ClassesUsed.jsa to reuse the file
+	Depricated flags: -Xverify:none & -noverify
+
+API Updates:
+	ByteBuffer
+		New Methods:
+		ByteBuffer get(int index, byte[] dst)
+		ByteBuffer put(int index, byte[] src)
+		ByteBuffer get(int index, byte[] dst, int offset, int length)
+		ByteBuffer put(int index, byte[] src, int offset, int length)
+		
+Removed javax.security.cert --> use java.security.cert instead.
+
+New Garbage collector: ZGC
+
+Unicode 12.1 Support
+	4 new scripts
+	555 new characters
+	61 new emoji characters
+	
